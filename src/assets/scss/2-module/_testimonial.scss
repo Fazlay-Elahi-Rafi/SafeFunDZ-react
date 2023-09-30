@@ -1,0 +1,194 @@
+.testimonial {
+    padding: 80px 0;
+    background: $back-drop;
+    overflow: hidden;
+
+    // min-width: 1200px;
+    @include xl-screen {
+        padding: 100px 0;
+    }
+
+    &__py {
+
+        // min-width: 1200px;
+        @include xl-screen {
+            padding: 100px 0 180px 0 !important;
+        }
+
+    }
+
+    &__body {
+        position: relative;
+
+        &-left {
+            position: absolute;
+            top: 43%;
+            left: -2%;
+        }
+
+        &-right {
+            position: absolute;
+            top: 43%;
+            right: -2%;
+        }
+
+        &-bg {
+            background: $back-drop;
+            padding: 110px 0;
+        }
+
+        &-items {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+
+            // min-width: 768px;
+            @include md-screen {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            // min-width: 1200px;
+            @include xl-screen {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    &__arrow {
+
+        // ------> Testimonial HomePage arrow
+        &-left {
+            position: absolute;
+            top: 42%;
+            left: -2%;
+            content: "";
+        }
+
+        &-right {
+            position: absolute;
+            top: 42%;
+            right: -2%;
+            content: "";
+        }
+
+        // ------> Testimonial AboutPage arrow
+        &-two {
+            position: absolute;
+
+            &--left {
+                bottom: -24%;
+                left: 40%;
+
+                // min-width: 992px;
+                @include lg-screen {
+                    left: 41%;
+                }
+
+                // min-width: 1200px;
+                @include xl-screen {
+                    left: 44%;
+                }
+            }
+
+            &--right {
+                bottom: -24%;
+                left: 52%;
+
+                // min-width: 1200px;
+                @include xl-screen {
+                    left: 51%;
+                }
+            }
+
+
+        }
+    }
+
+    &__card {
+        padding: 26px;
+        background: $white;
+        border-radius: 30px;
+        font-family: $font;
+        transition: all 0.2s linear;
+        border: 2px solid transparent;
+
+        // min-width: 768px;
+        @include md-screen {
+            padding: 40px;
+        }
+
+        &:hover {
+            transition: all 0.2s linear;
+            border: 2px solid $white;
+            background: $btn !important;
+        }
+
+        &:hover &-name {
+            transition: all 0.2s linear;
+            color: $white !important;
+        }
+
+        &:hover &-desc {
+            transition: all 0.2s linear;
+            color: $C-3 !important;
+        }
+
+        &:hover &-type {
+            transition: all 0.2s linear;
+            color: $C-3 !important;
+        }
+
+        &-ul {
+            display: flex;
+            gap: 5px;
+            padding: 0;
+        }
+
+        &-star {
+            color: $star;
+        }
+
+        &-name {
+            font-weight: 600;
+            font-size: 18px;
+            color: $C-2 !important;
+            text-transform: capitalize;
+            text-decoration: none;
+
+        }
+
+        &-type {
+            color: $C-2;
+            font-weight: 400;
+            font-size: 12px;
+            display: block;
+            transition: all 0.2s linear;
+        }
+
+        &-desc {
+            margin: 20px 0;
+            font-size: 14px;
+            line-height: 24px !important;
+            transition: all 0.2s linear;
+
+            // min-width: 576px;
+            @include sm-screen {
+                font-size: 16px;
+                line-height: 28px !important;
+            }
+        }
+    }
+
+    .slick-slide {
+        padding: 0 6px;
+
+        // min-width: 576px;
+        @include sm-screen {
+            padding: 0 20px;
+        }
+    }
+
+    .slick-dots {
+        bottom: -40px !important;
+    }
+}
