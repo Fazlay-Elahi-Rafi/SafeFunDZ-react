@@ -26,7 +26,7 @@
                 height: 197px;
                 content: "";
                 z-index: 2;
-                background-image: url(../../img/header-back.png);
+                background-image: url('src/assets/img/header-back.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -59,7 +59,7 @@
             &::after {
                 position: absolute;
                 content: '';
-                background-image: url(../../img/blur-bg-2.svg);
+                background-image: url('src/assets/img/blur-bg-2.svg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;

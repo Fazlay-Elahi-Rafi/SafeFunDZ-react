@@ -214,10 +214,9 @@
 
             &--ins {
                 font-size: 24px;
-                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
+                background: linear-gradient(45deg, #8a3ab9, #c13584, #f56040, #fcaf45);
+                color: white;
+                border-radius: 4px;
             }
         }
     }

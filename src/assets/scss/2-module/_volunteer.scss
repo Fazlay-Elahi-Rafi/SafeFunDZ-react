@@ -25,6 +25,7 @@
 
     &__list {
         margin: 24px 0 50px 0;
+        padding: 0;
 
         li {
             font-family: $font;
@@ -69,7 +70,7 @@
 
         &-i {
             background: $bg-3;
-            font-size: 20px;
+            font-size: 4rem;
             padding: 16px 16px;
             border-radius: 100px;
             color: $C-1;
@@ -78,7 +79,7 @@
             // min-wdith: 400px;
             @include xsss-screen {
                 margin: 0 0 0 0;
-                font-size: 28px;
+                font-size: 4.25rem;
                 padding: 20px 20px;
             }
         }

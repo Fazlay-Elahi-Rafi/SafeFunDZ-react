@@ -14,7 +14,7 @@ import googleLg from "../../img/google-lg.svg";
 import shield from "../../img/shield.svg";
 import dollar from "../../img/dollar.svg";
 
-import { FormSingleInput, SingleFormItem } from "./FormItems";
+import { FormSingleInput, SingleFormItem } from "../Global/FormItems";
 import { FormSelectOptions } from "../../data/indexData";
 
 export default function FormModal() {

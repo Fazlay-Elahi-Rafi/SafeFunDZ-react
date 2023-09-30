@@ -16,12 +16,14 @@ import {
   ContactPage,
   GalleryPage,
   SingleCase,
+  TestimonialPage,
+  VolunterPage,
+  BlogDetails,
   Donate,
   Error,
   SignIn,
   SignUp,
-  TestimonialPage,
-} from "./assets/pages/Pages";
+} from "./assets/pages/_Pages";
 
 // ------> LayOuts
 import Layout from "./assets/pages/Layout";
@@ -57,6 +59,8 @@ export default function App() {
           <Route path="/singleCase" element={<SingleCase />} />
           <Route path="/testimonials" element={<TestimonialPage />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/volunteer" element={<VolunterPage />} />
+          <Route path="/blogDetails" element={<BlogDetails />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

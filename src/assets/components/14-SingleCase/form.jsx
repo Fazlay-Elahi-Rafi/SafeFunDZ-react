@@ -3,7 +3,7 @@ import React from "react";
 import dollar from "../../img/dollar-lg-S.svg";
 import question from "../../img/question.svg";
 
-import { FormInput, SingleFormItem } from "./FormItems";
+import { FormInput, SingleFormItem } from "../Global/FormItems";
 
 export default function Form() {
   return (

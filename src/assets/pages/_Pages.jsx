@@ -8,6 +8,8 @@ import GalleryPage from "./GalleryPage";
 import SingleCase from "./SingleCases";
 import Donate from "./DonatePage";
 import TestimonialPage from "./TestimonialPage";
+import VolunterPage from "./VolunterPage";
+import BlogDetails from "./BlogDetails";
 import Error from "./404";
 
 import SignIn from "../components/auth/SignIn";
@@ -24,6 +26,7 @@ export {
   SingleCase,
   Donate,
   TestimonialPage,
+  VolunterPage,BlogDetails,
   Error,
   SignIn,
   SignUp,

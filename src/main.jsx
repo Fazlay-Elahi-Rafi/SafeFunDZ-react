@@ -11,8 +11,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-import App from "./App";
+import App from "./App.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

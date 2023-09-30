@@ -22,7 +22,7 @@
                 height: 100%;
                 content: "";
                 z-index: -1;
-                background-image: url(../../img/blur-bg.png);
+                background-image: url('src/assets/img/blur-bg.png');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -32,7 +32,7 @@
 
     &__three {
         margin: 0 0;
-        background-image: url(../../img/header-img-3.png);
+        background-image: url('src/assets/img/header-img-3.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

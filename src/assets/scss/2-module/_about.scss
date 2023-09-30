@@ -63,7 +63,7 @@
         &::before {
             position: absolute;
             content: "";
-            background-image: url(../../img/element-3.svg);
+            background-image: url('src/assets/img/element-3.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -76,7 +76,7 @@
         &::after {
             position: absolute;
             content: "";
-            background-image: url(../../img/polygon.svg);
+            background-image: url('src/assets/img/polygon.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
