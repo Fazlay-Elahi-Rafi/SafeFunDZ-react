@@ -7,10 +7,12 @@ import Footer from "../components/Footer/Footer";
 export default function Layout() {
   return (
     <>
-      <Navbar />
+      <div className="hero__banner">
+        <Navbar />
 
-      <Outlet />
+        <Outlet />
 
+      </div>
       <Footer />
     </>
   );

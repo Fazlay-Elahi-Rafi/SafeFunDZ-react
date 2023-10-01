@@ -9,6 +9,7 @@ import ScrollUp from "./assets/components/Global/scrollUp";
 // ------> Page's
 import {
   HomePage,
+  HomePage_Two,
   AboutPage,
   TeamPage,
   BlogPage,
@@ -50,6 +51,7 @@ export default function App() {
 
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="/home-2" element={<HomePage_Two />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/cases" element={<CasesPage />} />

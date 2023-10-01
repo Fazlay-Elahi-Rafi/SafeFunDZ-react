@@ -42,19 +42,39 @@ export default function Navbar() {
         };
 
   const menuClassName = isVisible
-    ? `menu__scroll ${currentScrollPosition !== 0 ? "position-fixed" : ""}`
+    ? `menu__scroll ${
+        currentScrollPosition !== 0
+          ? "position-fixed bg-white"
+          : "bg-transparent"
+      }`
     : "menu__scroll global__transparent position-relative";
+
+  // const menuClassName = isVisible
+  //   ? `menu__scroll ${
+  //       currentScrollPosition !== 0 ? "position-fixed" : ""
+  //     }`
+  //   : "menu__scroll global__transparent position-relative";
 
   return (
     <>
       <nav
+        className={`navbar navbar-expand-lg navbar-light menu ${
+          window.location.pathname === "/signin" ||
+          window.location.pathname === "/signup" ||
+          window.location.pathname === "/home-2"
+            ? `${menuClassName}`
+            : menuClassName
+        }`}
+        style={menuStyle}
+      >
+        {/* <nav
         className={`navbar navbar-expand-lg navbar-light bg-white menu ${
           ["/signin", "/signup"].includes(window.location.pathname)
             ? ""
             : menuClassName
         }`}
         style={menuStyle}
-      >
+      > */}
         <div className="container p-sm-0">
           <Link className="navbar-brand menu__logo p-0 m-0" to="/">
             <img className="menu__logo-img" src={logo} alt="logo" />
@@ -93,12 +113,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/">
-                      home one
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/">
+                    <Link className="dropdown-item" to="/home-2">
                       home two
                     </Link>
                   </li>
@@ -166,11 +181,6 @@ export default function Navbar() {
                   <li>
                     <Link className="dropdown-item" to="/blogDetails">
                       blog details
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/faqs">
-                      faqs
                     </Link>
                   </li>
                   <li>

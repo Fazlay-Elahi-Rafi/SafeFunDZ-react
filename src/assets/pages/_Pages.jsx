@@ -1,4 +1,5 @@
 import HomePage from "./HomePage";
+import HomePage_Two from "./HomePage-2";
 import AboutPage from "./AboutPage";
 import TeamPage from "./TeamPage";
 import CasesPage from "./CasesPage";
@@ -17,6 +18,7 @@ import SignUp from "../components/auth/SignUp";
 
 export {
   HomePage,
+  HomePage_Two,
   AboutPage,
   TeamPage,
   BlogPage,
@@ -26,7 +28,8 @@ export {
   SingleCase,
   Donate,
   TestimonialPage,
-  VolunterPage,BlogDetails,
+  VolunterPage,
+  BlogDetails,
   Error,
   SignIn,
   SignUp,
