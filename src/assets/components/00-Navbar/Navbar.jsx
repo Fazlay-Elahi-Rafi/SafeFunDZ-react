@@ -41,19 +41,22 @@ export default function Navbar() {
           transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
         };
 
-  const menuClassName = isVisible
-    ? `menu__scroll ${
-        currentScrollPosition !== 0
-          ? "position-fixed bg-white"
-          : "bg-transparent"
-      }`
-    : "menu__scroll global__transparent position-relative";
-
-  // const menuClassName = isVisible
-  //   ? `menu__scroll ${
-  //       currentScrollPosition !== 0 ? "position-fixed" : ""
-  //     }`
-  //   : "menu__scroll global__transparent position-relative";
+  let menuClassName = "";
+  if (window.location.pathname === "/home-2") {
+    menuClassName = isVisible
+      ? `menu__scroll ${
+          currentScrollPosition !== 0
+            ? "position-fixed bg-white"
+            : "bg-transparent"
+        }`
+      : "menu__scroll global__transparent position-relative";
+  } else {
+    menuClassName = isVisible
+      ? `menu__scroll ${
+          currentScrollPosition !== 0 ? "position-fixed bg-white" : ""
+        }`
+      : "menu__scroll global__transparent position-relative";
+  }
 
   return (
     <>
@@ -67,14 +70,6 @@ export default function Navbar() {
         }`}
         style={menuStyle}
       >
-        {/* <nav
-        className={`navbar navbar-expand-lg navbar-light bg-white menu ${
-          ["/signin", "/signup"].includes(window.location.pathname)
-            ? ""
-            : menuClassName
-        }`}
-        style={menuStyle}
-      > */}
         <div className="container p-sm-0">
           <Link className="navbar-brand menu__logo p-0 m-0" to="/">
             <img className="menu__logo-img" src={logo} alt="logo" />
