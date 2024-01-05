@@ -84,7 +84,7 @@
 
                 // min-width: 568px;
                 @include iphn-screen {
-                    font-size: 24px;
+                    font-size: 22px;
                 }
             }
 
@@ -97,11 +97,11 @@
         }
 
         &-progress {
-            background: $back-drop;
-            height: 8px;
+            background: $back-drop !important;
+            height: 8px !important;
 
             &--bar {
-                background: $btn;
+                background: $btn !important;
             }
         }
     }

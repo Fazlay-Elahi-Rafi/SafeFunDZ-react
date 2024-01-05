@@ -59,6 +59,12 @@ import IconTwo from "../img/hands-2.svg";
 import userOne from "../img/client-1.png";
 import userTwo from "../img/client-2.png";
 
+//# --> For CollectionData
+import box from "../img/box.svg";
+import dollarS from "../img/dollar-s.svg";
+import hands from "../img/hands.svg";
+import donation from "../img/donation-2.svg";
+
 export const BlogData = [
   {
     id: 331,
@@ -661,5 +667,28 @@ export const CategoryData = [
   },
   {
     category: "Halping Poor",
+  },
+];
+
+export const CollectionData = [
+  {
+    icon: box,
+    num: 6500,
+    text: "Donation",
+  },
+  {
+    icon: dollarS,
+    num: 60,
+    text: "Found Raised",
+  },
+  {
+    icon: hands,
+    num: 250,
+    text: "Volunteer",
+  },
+  {
+    icon: donation,
+    num: 110,
+    text: "Project",
   },
 ];

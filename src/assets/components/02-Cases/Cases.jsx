@@ -8,7 +8,7 @@ import { CasesData } from "../../data/indexData";
 import SingleCase from "./SingleCase";
 import SectionHead from "../Global/SectionHead";
 
-export default function Cases() {
+export default function Cases({ parentClass }) {
   function ArrowRight(props) {
     const { className, style, onClick } = props;
     return (
@@ -54,7 +54,7 @@ export default function Cases() {
   };
   return (
     <>
-      <div className="cases global__py">
+      <div className={`cases ${parentClass}`}>
         <div className="container p-sm-0">
           <SectionHead
             text="Our cases"

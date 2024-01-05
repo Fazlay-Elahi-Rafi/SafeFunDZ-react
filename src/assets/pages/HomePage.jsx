@@ -1,6 +1,7 @@
 import React from "react";
 
 import Title from "../components/Global/Title";
+import { settings } from "../components/07-Testimonial/settings";
 
 import Hero from "../components/01-Hero/Hero";
 import Cases from "../components/02-Cases/Cases";
@@ -17,12 +18,19 @@ export default function HomePage() {
     <>
       <Title title="SafeFunDz" />
       <Hero />
-      <Cases />
+      <Cases parentClass="global__py" />
       <About />
-      <Service />
+      <Service
+        parentClass="global__py pt-0"
+        childClass="service__card-linear"
+      />
       <Org />
       <Num />
-      <Testimonial />
+      <Testimonial
+        parentClass="testimonial__py"
+        containerClass="container p-sm-0"
+        settings={settings}
+      />
       <Team parentClass="global__py" />
       <Blog parentClass="global__py pt-0" />
     </>

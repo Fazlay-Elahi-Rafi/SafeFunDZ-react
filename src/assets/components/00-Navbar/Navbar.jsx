@@ -30,7 +30,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollPosition]);
+  }, [lastScrollPosition, location.pathname]);
 
   const menuStyle =
     currentScrollPosition === 0
@@ -113,13 +113,8 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/">
+                    <Link className="dropdown-item" to="/home-3">
                       home three
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/">
-                      home Four
                     </Link>
                   </li>
                 </ul>
@@ -160,7 +155,7 @@ export default function Navbar() {
                   pages
                 </Link>
                 <ul
-                  className="dropdown-menu menu__list-dropdown--ul"
+                  className="dropdown-menu menu__list-dropdown--ul menu__list-dropdown--height"
                   aria-labelledby="navbarDropdown"
                 >
                   <li>

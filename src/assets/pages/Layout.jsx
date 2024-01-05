@@ -5,19 +5,12 @@ import Navbar from "../components/00-Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 export default function Layout() {
-  let menuClassName = "";
+  const menuClassName = location.pathname === "/home-2" ? "hero__banner" : "";
 
-  if (window.location.pathname === "/home-2") {
-    menuClassName = "hero__banner";
-  } else {
-    menuClassName = "";
-  }
-  
   return (
     <>
-      <div className={`${menuClassName}`}>
+      <div className={menuClassName}>
         <Navbar />
-
         <Outlet />
       </div>
       <Footer />

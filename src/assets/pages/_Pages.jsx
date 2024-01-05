@@ -1,5 +1,6 @@
 import HomePage from "./HomePage";
 import HomePage_Two from "./HomePage-2";
+import HomePage_Three from "./HomePage-3";
 import AboutPage from "./AboutPage";
 import TeamPage from "./TeamPage";
 import CasesPage from "./CasesPage";
@@ -19,6 +20,7 @@ import SignUp from "../components/auth/SignUp";
 export {
   HomePage,
   HomePage_Two,
+  HomePage_Three,
   AboutPage,
   TeamPage,
   BlogPage,

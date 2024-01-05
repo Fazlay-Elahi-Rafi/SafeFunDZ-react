@@ -3,10 +3,10 @@ import React from "react";
 import ModalProps from "./SingleModal";
 import { Services } from "../../data/indexData";
 
-export default function Service() {
+export default function Service({ parentClass, childClass }) {
   return (
     <>
-      <div className="service global__py pt-0">
+      <div className={`service ${parentClass}`}>
         <div className="container p-sm-0">
           <div className="row">
             <div
@@ -28,7 +28,7 @@ export default function Service() {
                     key={service.id}
                     {...service}
                     parentClass="col-md-6 pe-md-4"
-                    itemClass="service__card service__card-linear"
+                    itemClass={`service__card ${childClass}`}
                   />
                 );
               })}

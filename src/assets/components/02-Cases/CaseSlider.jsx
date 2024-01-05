@@ -60,10 +60,11 @@ export default function CaseSlider({ parentClass }) {
           />
           <div className="row">
             <Slider {...settings}>
-              {CasesData.length > 0 &&
-                CasesData.map((data) => {
-                  return <SingleCase key={data.id} {...data} />;
-                })}
+              {CasesData.length > 0
+                ? CasesData.map((data) => {
+                    return <SingleCase key={data.id} {...data} />;
+                  })
+                : window.location.reload()}
             </Slider>
           </div>
         </div>

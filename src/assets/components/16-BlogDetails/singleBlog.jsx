@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import img from "../../img/blog_detail-1.png";
 import user from "../../img/user-13.png";
@@ -9,15 +10,15 @@ import BlogSocialLink from "./blogSocialLink";
 export default function SingleBlog() {
   return (
     <>
-      <div className="blog global__py pt-0">
+      <div className="blog global__py global__white pt-0">
         <div className="container p-sm-0">
           <div className="row">
             <div className="col-12 col-md-9 col-lg-8 text-center m-auto">
               <div className="mt-3">
                 <div className="mt-5">
-                  <a href="donate.html" className="global__btn">
+                  <Link to="/donate" className="global__btn">
                     Donation
-                  </a>
+                  </Link>
                   <span className="global__text blog__detail-text">
                     December 01, 2023
                   </span>
@@ -80,9 +81,9 @@ export default function SingleBlog() {
                       </p>
                       <ul className="d-flex gap-4 pb-4 px-0">
                         <li className="m-0">
-                          <a href="#">
+                          <Link to="/donate">
                             <img className="img-fluid" src={icon} alt="icon" />
-                          </a>
+                          </Link>
                         </li>
                         <BlogSocialLink
                           parentClass="m-0"
